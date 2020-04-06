@@ -22,6 +22,7 @@ Vagrant.configure('2') do |config|
   config.vm.provision 'shell', path: 'shell/apt-update.sh'
   config.vm.provision 'shell', path: 'shell/tools-installation.sh'
   config.vm.provision 'shell', path: 'shell/docker-installation.sh'
+  config.vm.provision 'shell', path: 'shell/docker-compose-installation.sh'
 
   config.vm.provision 'shell', path: 'shell/on-start.sh', run: 'always'
 end
