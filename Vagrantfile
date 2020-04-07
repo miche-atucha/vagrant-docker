@@ -13,8 +13,8 @@ Vagrant.configure('2') do |config|
   
   config.vm.provider 'virtualbox' do |virtualbox|
     virtualbox.name = 'docker'
-    virtualbox.memory = 1024
-    virtualbox.cpus = 1
+    virtualbox.memory = 2048
+    virtualbox.cpus = 2
   end
 
   config.vm.synced_folder "docker/", "/docker"
