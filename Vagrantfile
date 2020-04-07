@@ -17,6 +17,8 @@ Vagrant.configure('2') do |config|
     virtualbox.cpus = 1
   end
 
+  config.vm.synced_folder "docker/", "/docker"
+
   config.vbguest.auto_update = true
 
   config.vm.provision 'shell', path: 'shell/apt-update.sh'
