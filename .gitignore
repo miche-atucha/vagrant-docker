@@ -1,3 +1,4 @@
 *.log
 .vagrant/
 docker/docker-compose.yml
+docker/
